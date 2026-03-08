@@ -1,0 +1,6 @@
+#Testing Framework: pytest
+pytest
+
+#Playwright automation library
+playwright
+pytest-playwright
