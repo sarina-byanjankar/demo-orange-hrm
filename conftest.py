@@ -1,5 +1,5 @@
 import pytest
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Page, sync_playwright
 from pages.login import Login
 from utils.config import BASE_URL, USERNAME, PASSWORD
 
