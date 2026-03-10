@@ -11,6 +11,8 @@ class landingpage:
         self.page_title = self.page.locator(
             "h5.oxd-text")
         self.page_title.wait_for(state="visible", timeout=TIMEOUT)
+        self.username_field = self.page.locator(
+            "input[name='username']")
 
     def verify_brand_logo(self):
         return self.brand_logo.is_visible()
@@ -19,8 +21,7 @@ class landingpage:
         return self.page_title.is_visible()
 
     def verify_field_username(self):
-        self.username_field = self.page.locator(
-            "input[name='username']")
+
         self.username_field.wait_for(state="visible", timeout=TIMEOUT)
         return self.username_field.is_visible()
 
