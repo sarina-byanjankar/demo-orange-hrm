@@ -2,9 +2,11 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+        -main
   pull_request:
-    branches: [ main ]
+    branches:
+        -main
 
 jobs:
   test:
@@ -14,21 +16,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.14'
 
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
-
-      - name: Install Playwright Browsers
-        run: |
-          playwright install --with-deps
+          playwright install
 
       - name: Run Tests
         run: |
-          pytest --html=report.html --self-contained-html
-
-
+          pytest

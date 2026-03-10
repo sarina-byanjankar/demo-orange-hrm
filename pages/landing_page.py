@@ -5,11 +5,12 @@ from utils.config import TIMEOUT
 class landingpage:
     def __init__(self, page):
         self.page = page
-
-    def verify_brand_logo(self):
         self.brand_logo = self.page.locator(
             ".orangehrm-login-branding")
         self.brand_logo.wait_for(state="visible", timeout=TIMEOUT)
+
+    def verify_brand_logo(self):
+
         return self.brand_logo.is_visible()
 
     def verify_page_title(self):
