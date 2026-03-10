@@ -8,16 +8,14 @@ class landingpage:
         self.brand_logo = self.page.locator(
             ".orangehrm-login-branding")
         self.brand_logo.wait_for(state="visible", timeout=TIMEOUT)
-
-    def verify_brand_logo(self):
-
-        return self.brand_logo.is_visible()
-
-    def verify_page_title(self):
         self.page_title = self.page.locator(
             "h5.oxd-text")
         self.page_title.wait_for(state="visible", timeout=TIMEOUT)
 
+    def verify_brand_logo(self):
+        return self.brand_logo.is_visible()
+
+    def verify_page_title(self):
         return self.page_title.is_visible()
 
     def verify_field_username(self):
