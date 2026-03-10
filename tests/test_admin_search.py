@@ -18,6 +18,6 @@ from pages.login import Login
 def test_search_user(logged_in_page):
     admin_page = AdminPage(logged_in_page)
     admin_page.goto_admin()
-    admin_page.search_user("Michael Tomlinson user")
 
+    admin_page.search_user("Michael Tomlinson user")
     assert admin_page.results_table.count() > 0
