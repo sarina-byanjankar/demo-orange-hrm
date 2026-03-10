@@ -11,7 +11,7 @@ from utils.config import BASE_URL, ENV, USERNAME, PASSWORD
 @pytest.fixture
 def page():
     with sync_playwright() as p:
-        browser = p.firefox.launch(headless=True)
+        browser = p.firefox.launch(headless=False)
         page = browser.new_page()
         # page.goto("www.example.com", wait_until="networkidle")
         page.goto(BASE_URL, wait_until="networkidle")
