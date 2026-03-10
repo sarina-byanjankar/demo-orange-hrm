@@ -1,0 +1,10 @@
+2026-03-09 00:15:47,829 - INFO - Testing valid login with correct credentials
+2026-03-09 00:16:06,924 - INFO - Testing invalid login with incorrect credentials
+2026-03-09 00:16:25,930 - INFO - Testing login with empty username and password
+2026-03-09 07:57:43,305 - INFO - Testing valid login with correct credentials
+2026-03-09 07:58:04,596 - INFO - Testing invalid login with incorrect credentials
+2026-03-09 07:58:31,663 - INFO - Testing login with empty username and password
+2026-03-09 08:03:54,101 - INFO - Testing valid login with correct credentials
+2026-03-09 08:04:21,760 - INFO - Testing invalid login with incorrect credentials
+2026-03-09 08:04:46,208 - INFO - Testing login with empty username and password
+2026-03-09 20:16:43,496 - INFO - Screenshot taken for failed test: test_page_title
