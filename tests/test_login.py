@@ -2,7 +2,7 @@
 from conftest import logger
 
 from pages.login import Login
-from utils.config import TIMEOUT
+# from utils.config import TIMEOUT
 
 
 def test_valid_login(page):
