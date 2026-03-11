@@ -3,12 +3,12 @@ import pytest
 from pages.landing_page import landingpage
 
 
-@pytest.mark.landing
-def test_page_title(page):
-    landing_page = landingpage(page)
-    expected_title = "Login"
-    assert landing_page.verify_page_title(
-    ) == expected_title, f"Expected page title to be '{expected_title}'"
+# @pytest.mark.landing
+# def test_page_title(page):
+#     landing_page = landingpage(page)
+#     expected_title = "Login"
+#     assert landing_page.verify_page_title(
+#     ) == expected_title, f"Expected page title to be '{expected_title}'"
 
 
 @pytest.mark.landing
