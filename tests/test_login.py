@@ -10,8 +10,6 @@ def test_valid_login(page):
 
     logger.info("Testing valid login with correct credentials")
     login.login("admin", "admin123")
-
-    # page = logged_in_page(page)
     assert "dashboard" in page.url
 
 
