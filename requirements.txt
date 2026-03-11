@@ -4,3 +4,4 @@ pytest
 #Playwright automation library
 playwright
 pytest-playwright
+pytest-html
