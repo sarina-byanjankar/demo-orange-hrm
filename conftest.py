@@ -3,7 +3,7 @@ import logging
 
 from playwright.sync_api import Page, sync_playwright
 from pages.login import Login
-from utils.config import BASE_URL, ENV, USERNAME, PASSWORD
+from utils.config import BASE_URL, USERNAME, PASSWORD
 
 # making the follwoing function a fixture so that it can be used in the test functions, it will be automatically called
 

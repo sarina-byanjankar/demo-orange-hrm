@@ -9,7 +9,6 @@ class Login:
     def login(self, username, password):
         # self.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         self.page.fill("input[name='username']", username)
-        s
         self.page.fill("input[name='password']", password)
         self.page.click("button[type='submit']")
         # Add any additional steps or checks after login if necessary
