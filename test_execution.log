@@ -9,3 +9,11 @@
 2026-03-09 08:04:46,208 - INFO - Testing login with empty username and password
 2026-03-09 20:16:43,496 - INFO - Screenshot taken for failed test: test_page_title
 2026-03-11 21:45:52,624 - INFO - Screenshot taken for failed test: test_page_title
+2026-03-12 21:33:14,521 - INFO - Testing login with username: admin and password: Admin123
+2026-03-12 21:33:31,338 - INFO - Testing login with username: random and password: Admin123
+2026-03-12 21:33:47,690 - INFO - Testing login with username: admin and password: random
+2026-03-12 21:34:08,921 - INFO - Testing login with username: random and password: random
+2026-03-12 21:37:43,939 - INFO - Testing login with username: admin and password: Admin123
+2026-03-12 21:37:56,231 - INFO - Testing login with username: random and password: Admin123
+2026-03-12 21:38:07,827 - INFO - Testing login with username: admin and password: random
+2026-03-12 21:38:23,712 - INFO - Testing login with username: random and password: random
